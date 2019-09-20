@@ -99,7 +99,7 @@ class Logic {
                             //доска повернулась
                             result = true;
                             //увеличивается счетчик очков
-                            score += board[m][i];
+                            score += board[m][i]*10;
                             //выйти из цикла
                             break;
                             //иначе если m отсатала или перегнала j (обычно m = j-1)
@@ -148,7 +148,7 @@ class Logic {
                             limit = m;
                             idles++;
                             result = true;
-                            score += board[m][i];
+                            score += board[m][i]*10;
                             break;
                         } else if ((m - 1) != j) {
                             int temp = board[j][i];
@@ -191,7 +191,7 @@ class Logic {
                             limit = m;
                             idles++;
                             result = true;
-                            score += board[m][i];
+                            score += board[m][i]*10;
                             break;
                         } else if ((m + 1) != j) {
                             int temp = board[i][j];
@@ -234,7 +234,7 @@ class Logic {
                             limit = m;
                             idles++;
                             result = true;
-                            score += board[m][i];
+                            score += board[m][i]*10;
                             break;
                         } else if ((m - 1) != j) {
                             int temp = board[i][j];
